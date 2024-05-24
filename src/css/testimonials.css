@@ -1,0 +1,160 @@
+/* ================ Testimonials ================ */
+
+/* === Testimonials mob === */
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  background-color: #1c2225;
+}
+
+.testimonials-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+}
+
+.testimonials-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fcf9f9;
+  margin-top: 54px;
+}
+
+.testimonials-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(252, 249, 249, 0.4);
+  margin-top: 8px;
+}
+
+.testimonials-list-box {
+  box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 4px;
+  padding: 0px 18px 18px 18px;
+  position: relative;
+  margin-top: 64px;
+}
+
+.testimonials-foto {
+  border-radius: 100%;
+  box-shadow: 0 1px 4px 0 rgba(16, 24, 40, 0.06);
+  width: 64px;
+  height: 64px;
+}
+
+.testimonials-item .testimonials-foto {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translate(-50%, -50%);
+}
+
+.testimonials-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+/* 1 Варіант з закритими відгуками */
+@media screen and (max-width: 767px) {
+  .testimonials-item:not(:first-child) {
+    display: none;
+  }
+}
+
+/* 2 Варіант з карусєлью */
+/* .testimonials-item{
+    display: flex;
+}
+  .testimonials-list-slider {} */
+
+
+
+
+/* === Testimonials Tablet === */
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 32px;
+  }
+
+  .testimonials-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .testimonials-text {
+    font-size: 16px;
+  }
+
+  .testimonials-section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .testimonials-list {
+    display: flex;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .testimonials-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  /* 1 Варіант з закритими відгуками */
+  @media screen and (max-width: 1279px) {
+    .testimonials-item:last-child {
+      display: none;
+    }
+  }
+}
+
+
+
+/* === Testimonials desktop 1280px === */
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 50px;
+    }
+ 
+  .testimonials-section {
+      padding-bottom: 150px;
+      padding-top: 150px;
+  }
+
+  .testimonials-list {
+      display: flex;
+      text-align: center;
+      gap: 26px;
+  }
+
+  .testimonials-item {
+      width: calc((100% - 2*26px) / 3);
+  }
+
+}
+
+
+/* === Testimonials desktop 1440px === */
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 100px;
+  }}
