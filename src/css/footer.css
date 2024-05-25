@@ -1,0 +1,237 @@
+/* ==================== Footer ======================== */
+
+/* === Footer mob === */
+
+.footer-section {
+    background-color: #2e2f42;
+    padding: 150px 0;
+    display: block;
+    position: relative;
+    background-image: url(/img/g8.png);
+        background-repeat: no-repeat;
+        background-size: 425px;
+        background-position: 50% 200%;
+
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.footer-logo-white-letters {
+    color: #f4f4fd;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.footer-logo:hover,
+.footer-logo-white-letters:hover,
+.footer-logo:focus,
+.footer-logo-white-letters:focus {
+    color: #404bbf;
+}
+
+.footer-container {
+    text-align: center;
+    
+
+}
+
+.footer-container-logo {
+    margin-bottom: 72px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    width: 264px;
+    text-align: left;
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+}
+
+.social-list-footer {
+    margin: 0;
+    gap: 16px;
+}
+
+.social-media-footer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.social-item-footer:hover,
+.social-item-footer:focus {
+    background-color: #31d0aa;
+}
+
+.footer-buttons-box {}
+
+.footer-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-button-paragraf {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.button-your-email {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    padding-left: 16px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    opacity: 0.3;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.button-your-email::placeholder {
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.button-subscribe {
+    width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    color: #ffffff;
+    fill: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .icon-fly {
+        margin-left: 16px;
+    }
+
+    .button-subscribe:focus,
+    .button-subscribe:hover {
+        background-color: #404bbf;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-buttons {
+        flex-direction: column;
+    }
+}
+
+/* === Footer tablet === */
+
+@media screen and (min-width: 768px) {
+
+    .footer-section {
+        padding: 50px 0;
+        background-image: url(/img/g8.png);
+            background-repeat: no-repeat;
+            background-size: 425px;
+        
+        background-position: right -300px bottom -20px;
+    }
+
+    .footer-container-logo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .footer-container {
+        text-align: left;
+        min-width: 530px;
+        margin: 0auto;
+    }
+
+    .footer-tablet {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+
+    .social-footer {
+        margin-bottom: 0px;
+    }
+
+    .footer-buttons {
+        display: flex;
+        gap: 24px;
+    }
+
+    .button-your-email {
+        width: 264px;
+    }
+
+    .button-subscribe {
+        margin: 0;
+    }
+}
+
+/* === Footer desktop === */
+@media screen and (min-width: 1158px) {
+
+    .footer-section {
+        padding: 50px 0;
+        background-image: url(/images/g8.png);
+        background-repeat: no-repeat;
+        background-size: 595px;
+        background-position: right -200px bottom -50px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+        min-width: 1158px;
+        margin: 0 auto;
+    }
+
+
+    /* .footer-container-logo {
+        margin-right: 120px;
+    }
+
+    .footer-buttons-box {
+        margin-left: 80px;
+    }
+
+    .footer-tablet {
+        margin-left: 0;
+        margin-bottom: 0;
+        gap: 0;
+    } */
+
+  }
