@@ -1,30 +1,53 @@
 /* =========== FOOTER STYLES ============= */
+/* === Footer mob === */
 
 .footer {
+  padding-top: 40px;
+}
+.footer-container {
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
   background-image: url(/img/ornaments/yellow-ornament.png);
   background-size: 452px 401px;
   background-repeat: no-repeat;
-  background-position: 50% 180%;
+  background-position: 50% 185%;
   padding: 40px 0 280px;
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 375px) {
-  .footer {
+@media screen and (min-resolution: 192dpi) and (min-width: 320px) {
+  .footer-container {
     background-image: url(/img/ornaments/yellow-ornament@2x.png);
     background-size: 452px 401px;
   }
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
+  .footer-nav-list {
+    display: flex;
+    flex-flow: column wrap;
+    height: 61.1px;
+    gap: 25px;
+    column-gap: 40px;
+    margin-bottom: 40px;
+    max-width: 280px;
+  } */
 
-.footer-nav-list {
-  display: flex;
-  flex-flow: column wrap;
-  height: 61.1px;
-  gap: 25px;
-  column-gap: 40px;
-  margin-bottom: 40px;
-  max-width: 280px;}
+  .footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 61.1px;
+    gap: 25px;
+    column-gap: 40px;
+    margin-bottom: 40px;
+    max-width: 280px;
+  }
+ .footer-nav-list-item {
+    width: calc((100% - 40px) / 2);
+    line-height: 0;
+  }
+  
+/* } */
+
   /* -немає великого зміщення вліво!!!
 прибравши column-gap: 40px; цього можливо досягти 
 -додавши flex-flow:column wrap; + height: 61.1px;
@@ -32,12 +55,7 @@
 
   /*   задавши фіксовану ширину ми досягаємо того положення навігаціі як в макеті (при ширині єкрана 375px column-gap: 40px, якщо не задавати фіксованої ширини то при ширині єкрана 375px буде column-gap: 40px+ )  */
 
-
-.footer-nav-list-item {
-  width: calc((100% - 40px) / 2);
-  line-height: 0;
-}
-}
+ 
 
 .footer-nav-list-link {
   font-weight: 400;
@@ -65,71 +83,58 @@
   color: #ecd979;
 }
 
- 
+/* === Footer tab === */
 @media screen and (min-width: 768px) {
-.footer {
-    background-image: url(/img/ornaments/yellow-ornament.png);
+  .footer-container {
+    /* background-image: url(/img/ornaments/yellow-ornament.png);
     background-size: 452px 401px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-position: right -274px bottom -17px;
-    padding: 40px 0 ;
+    /* border-top: 1px solid rgba(252, 249, 249, 0.1); */
+    padding: 40px 0;
   }
 
-  @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
-    .footer {
-      background-image: url(/img/ornaments/yellow-ornament@2x.png);
-      background-size: 452px 401px;
+  /* .footer-nav-list {
+    display: flex;
+    gap: 25px;
+    max-width: 478px;
+    margin-bottom: 80px;
+  } */
+
+    .footer-nav-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      height:auto;
+      gap: 25px;
+      margin-bottom: 80px;
+      max-width: 478px;
     }
+  
+    .footer-nav-list-item {
+      width: calc((100% - 75px) / 4);
+      line-height: 0;
+    }
+
+  .footer-nav-list-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+/*  width: calc((100% - 75px) / 4);*/
   }
-.footer-nav-list {
-  display: flex;
- gap: 25px;
-max-width: 521px;
-  margin-bottom: 80px;
+
+  /* .footer-nav-list-item {
+    line-height: 0;
+  } */
+ 
+  .footer-company-slogan {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 1.19;
+    max-width: 521px;
+  }
 }
 
-.footer-nav-list-item {
-   width: calc((100% - 3*25px) / 4);
-  line-height: 0;
+/* === Footer desktop === */
+@media screen and (min-width: 1280px) {
 }
-
-.footer-company-slogan {
-  font-weight: 400;
-  font-size: 54px;
-  line-height: 1.19;
-  max-width: 521px;
-}
-
-.footer-slogan-span {
-  color: #ecd979;
-}
-}
-
- @media screen and (min-width: 1280px) {
-
-
-
-
-
-
-    /* .footer-nav-list {
-        margin-bottom: 117px;
-    }
-
-    .footer-company-slogan {
-        width: 754px;
-        height: 148px;
-        font-size: 64px;
-        line-height: 1.16;
-    }
-
-    .collection-footer {
-        margin-left: 0;
-    }
-
-    .footer-nav-list-link:hover,
-    .footer-nav-list-link:focus {
-        color: #ecd979;
-        transition: color 250ms cubic-bezier(0.17, 1.01, 0.99, 0.79);
-    } */
-} 
