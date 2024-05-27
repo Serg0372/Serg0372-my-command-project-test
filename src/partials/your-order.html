@@ -1,3 +1,83 @@
-<section>
-    <p>your-order</p>
+<section class="section" id="customers-order">
+  <div class="order-section">
+    <div class="order-img-girl"></div>
+    <div class="container">
+      <div class="order-form-desc">
+        <div class="order-form-box">
+          <h2 class="order-subtitle">
+            <span class="order-orange-word">Your order</span> is our priority:
+            Personalized approach and quality of service
+          </h2>
+
+          <form class="order-forms">
+            <div class="order-form-input-box">
+              <input
+                class="order-form-input"
+                type="text"
+                name="user-name"
+                pattern="[a-zA-ZА-Яа-яїЇіІєЄ'Ґґ]+"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="order-form-input-box">
+              <input
+                class="order-form-input"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="order-form-wrapper-comment">
+              <textarea
+                class="order-form-input order-form-comment"
+                name="user-comment"
+                placeholder="Comments"
+                required
+              ></textarea>
+            </div>
+
+            <button class="order-form-button" type="submit">
+              Send<svg
+                class="order-icon"
+                width="24"
+                height="20"
+                aria-label="icon-arrow"
+              >
+                <use href="/img/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="order-foto">
+          <picture>
+            <source
+              srcset="
+                /img/order/desk-order.jpg    1x,
+                /img/order/desk-order@2x.jpg 2x
+              "
+              media="(min-width: 1128px)"
+            />
+            <source
+              srcset="
+                /img/order/tab-order.jpg    1x,
+                /img/order/tab-order@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <img
+              class="orders-img"
+              src="/img/order/desk-order.jpg"
+              alt="Ukrainiane woman shirt"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
