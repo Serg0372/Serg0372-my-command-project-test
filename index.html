@@ -23,18 +23,122 @@
     <title>My command project test</title>
     
     <script type="module" crossorigin src="/my-command-project-test/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/my-command-project-test/assets/index-080f221a.css">
+    <link rel="stylesheet" href="/my-command-project-test/assets/index-7721466c.css">
   </head>
   <body>
     <header class="header">
-    <p>header</p>
-  
+  <div class="container header-container">
+    <nav class="header-nav">
+      <img
+        class="header-img"
+        src="/my-command-project-test/assets/logo-b56664e2.svg"
+        alt="ornament"
+        width="44"
+        height="40"
+      />
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#about-us" class="header-link">ABOUT US</a>
+        </li>
+        <li class="header-item">
+          <a href="#our-collection" class="header-link">OUR COLLECTION</a>
+        </li>
+        <li class="header-item">
+          <a href="#customer-order" class="header-link">CUSTOMER ORDER</a>
+        </li>
+        <li class="header-item">
+          <a href="testimonials" class="header-link">TESTIMONIALS</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-social">
+      <address class="header-address">
+        <a class="header-contact-link" href="tel:+380684439426"
+          >+380 (68) 443-94-26</a
+        >
+      </address>
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="header-social-link"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="header-social-link"
+          >
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social-item">
+          <a href="https://www.youtube.com/c/GoIT" class="header-social-link">
+            <svg class="header-social-icon" width="28" height="28">
+              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <button class="header-btn-burger" type="button">
+        <svg class="header-icon-burger" width="36" height="24">
+          <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
-
     <main>
-      <section class="hero">
-    <p>hero</p>
+      <section>hero</section>
+<section class="hero">
+  <div class="container hero-sun">
+    <div class="hero-block">
+      <div class="hero-block-title-and-button">
+        <h1 class="hero-title">
+          Reviving the traditional
+          <span class="hero-title-span">Ukrainian</span> artistry in every
+          stitch.
+        </h1>
+        <a class="hero-link" href="#order">
+          Order
+          <svg
+            class="hero-link-icon"
+            width="26"
+            height="10"
+            aria-label="icon-arrow"
+          >
+            <use href="./img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="hero-block-image">
+        <img
+          class="hero-image"
+          srcset="/my-command-project-test/assets/mob-hero-img-b76dad85.jpg ./img/hero/mob-hero-img@2x.jpg
+ ./img/hero/tab-hero-img.jpg
+ ./img/hero/tab-hero-img@2x.jpg
+ ./img/hero/desk-hero-img.jpg
+ ./img/hero/desk-hero-img@2x.jpg"
+          sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
+          src="/my-command-project-test/assets/mob-hero-img-b76dad85.jpg"
+          alt="Girl"
+        />
+      </div>
+    </div>
     
+    <div class="hero-group">
+      <svg class="hero-group-icon" width="52" height="51" aria-label="icon-star">
+        <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-star"></use>
+      </svg>
+      <p class="hero-group-text">all embroidery is made by hand</p>
+    </div>
+  </div>
 </section>
       <section>
     <p>About us</p>
@@ -284,26 +388,37 @@
   </div>
 </footer>
 
-    <!-- <section>
     <div class="backdrop-menu backdrop-is-open">
-        <div class="mobile-menu-modal">
-            <address>   
-                <a class="mobile-menu-phone-link" href="tel:+380684439426">+380 (68) 443-94-26</a>
-            </address>
-            <button class="mobile-menu-btn-close">
-                <svg class="mobile-menu-icon-close">
-                    <use href="../img/icons.svg#icon-x"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu-list">
-                <li class="mobile-menu-item"><a href="#about-us" class="mobile-menu-link">About us</a></li>
-                <li class="mobile-menu-item"><a href="#our-collection" class="mobile-menu-link">Our collection</a></li>
-                <li class="mobile-menu-item"><a href="#customer-order" class="mobile-menu-link">Customer-order</a></li>
-                <li class="mobile-menu-item"><a href="testimonials" class="mobile-menu-link">Testimonials</a></li>
-            </ul>
-        </div>
-    </div>
-</section> -->
+  <div class="container mobile-menu-modal">
+    <button class="mobile-menu-btn-close">
+      <svg class="mobile-menu-icon-close">
+        <use href="../img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+
+    <address>
+      <a class="mobile-menu-phone-link" href="tel:+380684439426"
+        >+380 (68) 443-94-26</a
+      >
+    </address>
+
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#about-us" class="mobile-menu-link">About us</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#our-collection" class="mobile-menu-link">Our collection</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#customer-order" class="mobile-menu-link">Customer-order</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#testimonials" class="mobile-menu-link">Testimonials</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
