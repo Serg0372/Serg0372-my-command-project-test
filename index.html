@@ -23,11 +23,12 @@
     <title>My command project test</title>
     
     <script type="module" crossorigin src="/my-command-project-test/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/my-command-project-test/assets/index-30c836aa.css">
+    <link rel="stylesheet" href="/my-command-project-test/assets/index-2cceb882.css">
   </head>
   <body>
     <header class="header">
-  <div class="container header-container">
+  <div class="container header-container
+  ">
     <nav class="header-nav">
       <img
         class="header-img"
@@ -64,7 +65,7 @@
             class="header-social-link"
           >
             <svg class="header-social-icon" width="28" height="28">
-              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-facebook"></use>
+              <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -74,30 +75,29 @@
             class="header-social-link"
           >
             <svg class="header-social-icon" width="28" height="28">
-              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-instagram"></use>
+              <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="header-social-item">
           <a href="https://www.youtube.com/c/GoIT" class="header-social-link">
             <svg class="header-social-icon" width="28" height="28">
-              <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-youtube"></use>
+              <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
       <button class="header-btn-burger" type="button" open-modal>
         <svg class="header-icon-burger" width="36" height="24">
-          <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-burger"></use>
+          <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-burger"></use>
         </svg>
       </button>
     </div>
   </div>
 </header>
     <main>
-      <section>hero</section>
-<section class="hero">
-  <div class="container hero-sun">
+      <section class="section hero">
+  <div class="container hero-star">
     <div class="hero-block">
       <div class="hero-block-title-and-button">
         <h1 class="hero-title">
@@ -105,170 +105,338 @@
           <span class="hero-title-span">Ukrainian</span> artistry in every
           stitch.
         </h1>
-        <a class="hero-link" href="#order">
+        <a class="hero-link" href="#customer-order">
           Order
           <svg
             class="hero-link-icon"
-            width="26"
-            height="10"
+            width="24"
+            height="20"
             aria-label="icon-arrow"
           >
-            <use href="./img/sprite.svg#icon-arrow"></use>
+            <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-arrow"></use>
           </svg>
         </a>
       </div>
       <div class="hero-block-image">
-        <img
-          class="hero-image"
-          srcset="/my-command-project-test/assets/mob-hero-img-b76dad85.jpg ./img/hero/mob-hero-img@2x.jpg
- ./img/hero/tab-hero-img.jpg
- ./img/hero/tab-hero-img@2x.jpg
- ./img/hero/desk-hero-img.jpg
- ./img/hero/desk-hero-img@2x.jpg"
-          sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
-          src="/my-command-project-test/assets/mob-hero-img-b76dad85.jpg"
-          alt="Girl"
-        />
+        <picture>
+          <source
+            srcset="/my-command-project-test/assets/desk-hero-img-7149eeda.jpg 1x, /my-command-project-test/assets/desk-hero-img@2x-db71039b.jpg 2x"
+            media="(min-width: 1158px)"
+          />
+          <source
+            srcset="/my-command-project-test/assets/tab-hero-img-52ee5f43.jpg 1x, /my-command-project-test/assets/tab-hero-img@2x-1a74d6aa.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/my-command-project-test/assets/mob-hero-img-b76dad85.jpg 1x, /my-command-project-test/assets/mob-hero-img@2x-854a39f4.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/my-command-project-test/assets/desk-hero-img-7149eeda.jpg" alt="Girl in blouse" />
+        </picture>
       </div>
     </div>
-    
+
     <div class="hero-group">
-      <svg class="hero-group-icon" width="52" height="51" aria-label="icon-star">
-        <use href="/my-command-project-test/assets/icons-67a58c33.svg#icon-star"></use>
+      <svg
+        class="hero-group-icon"
+        width="52"
+        height="51"
+        aria-label="icon-star"
+      >
+        <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-star"></use>
       </svg>
       <p class="hero-group-text">all embroidery is made by hand</p>
     </div>
   </div>
 </section>
-      <section>
-    <p>About us</p>
-    
+      <section class="section about-us" id="about-us">
+  <div class="container about-container">
+    <div class="about-us-container">
+      <h2 class="about-us-title">About Us</h2>
+
+      <ul class="about-us-list">
+        <li class="about-us-list-item">
+          <p class="about-section-text">
+            The store "Vyshyvanka Vibes" is a place where traditional Ukrainian
+            vyshyvanka comes to life with new zest and style. Our store offers a
+            wide selection of high-quality and authentic embroidery, which
+            combines the elegance of traditional needlework and modern design.
+          </p>
+        </li>
+        <li class="about-us-list-item">
+          <p class="about-section-text">
+            In "Vyshyvanka Vibes" you will find various models of embroidery,
+            from classic to modern, corresponding to the latest fashion trends.
+            Our embroidery is made using natural fabrics and is embroidered by
+            highly qualified craftsmen who convey the beauty of Ukrainian
+            culture in every detail.We believe that vyshyvanka is not just
+            clothing, but a symbol of national pride, the heritage of our
+            ancestors and a way of expressing one's individuality. Each
+            embroidery from "Vyshyvanka Vibes" has its own unique history and
+            symbolism, which gives it a special meaning.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <picture>
+        <source
+          srcset="/my-command-project-test/assets/desk-about-img-2703f33e.jpg , /my-command-project-test/assets/desk-about-img@2x-f2ae1c1f.jpg 2x"
+          media="(min-width: 1158px)"
+        />
+        <source
+          srcset="/my-command-project-test/assets/tab-about-img-7bc11594.jpg , /my-command-project-test/assets/tab-about-img@2x-7ba7f563.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/my-command-project-test/assets/mob-about-img-8418eca7.jpg , /my-command-project-test/assets/mob-about-img@2x-7d041fbc.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="about-img"
+          src="/my-command-project-test/assets/desk-about-img-2703f33e.jpg"
+          alt="Unique blouse"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
-      <section class="collection section">
+
+      <section class="our-collection section" id="our-collection">
   <div class="container">
     <h2 class="collection-title">Our collection</h2>
     <ul class="collection-menu">
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-1-c69a2d2c.jpg 1x, /my-command-project-test/assets/desk-collection-1@2x-bfc8994b.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-1-a486dd8d.jpg 1x, /my-command-project-test/assets/tab-collection-1@2x-bcd8cab7.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-1-55149b28.jpg 1x, /my-command-project-test/assets/mob-collection-1@2x-8c5dc25a.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-1-c69a2d2c.jpg"
-            alt="women's black long-sleeved blouse with colored embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-1-c69a2d2c.jpg 1x, /my-command-project-test/assets/desk-collection-1@2x-bfc8994b.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-1-a486dd8d.jpg 1x, /my-command-project-test/assets/tab-collection-1@2x-bcd8cab7.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-1-55149b28.jpg 1x, /my-command-project-test/assets/mob-collection-1@2x-8c5dc25a.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-1-c69a2d2c.jpg"
+              alt="women's black long-sleeved blouse with colored embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">august poltava women's blouse</h3>
         <p class="colection-price">3300 UAH</p>
       </li>
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-2-434bdb82.jpg 1x, /my-command-project-test/assets/desk-collection-2@2x-b255ee0e.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-2-02c2a7bb.jpg 1x, /my-command-project-test/assets/tab-collection-2@2x-ae80bfd7.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-2-e163d1ad.jpg 1x, /my-command-project-test/assets/mob-collection-2@2x-e15d3e17.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-2-434bdb82.jpg"
-            alt="Women's beige long-sleeved blouse with embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-2-434bdb82.jpg 1x, /my-command-project-test/assets/desk-collection-2@2x-b255ee0e.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-2-02c2a7bb.jpg 1x, /my-command-project-test/assets/tab-collection-2@2x-ae80bfd7.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-2-e163d1ad.jpg 1x, /my-command-project-test/assets/mob-collection-2@2x-e15d3e17.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-2-434bdb82.jpg"
+              alt="Women's beige long-sleeved blouse with embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">Women's blouse Gorgany</h3>
         <p class="colection-price">3350 UAH</p>
       </li>
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-3-8a453502.jpg 1x, /my-command-project-test/assets/desk-collection-3@2x-42f0d563.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-3-525bc17e.jpg 1x, /my-command-project-test/assets/tab-collection-3@2x-c82ff89c.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-3-27c8e50a.jpg 1x, /my-command-project-test/assets/mob-collection-3@2x-3df7d75a.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-3-8a453502.jpg"
-            alt="Women's white long-sleeved blouse with embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-3-8a453502.jpg 1x, /my-command-project-test/assets/desk-collection-3@2x-42f0d563.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-3-525bc17e.jpg 1x, /my-command-project-test/assets/tab-collection-3@2x-c82ff89c.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-3-27c8e50a.jpg 1x, /my-command-project-test/assets/mob-collection-3@2x-3df7d75a.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-3-8a453502.jpg"
+              alt="Women's white long-sleeved blouse with embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">Women's blouse Crimea</h3>
         <p class="colection-price">4000 UAH</p>
       </li>
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-4-0caea852.jpg 1x, /my-command-project-test/assets/desk-collection-4@2x-70e72e14.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-4-875f1a43.jpg 1x, /my-command-project-test/assets/tab-collection-4@2x-c9c08ff1.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-4-2c98873f.jpg 1x, /my-command-project-test/assets/mob-collection-4@2x-3c9bfc34.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-4-0caea852.jpg"
-            alt="men's beige long-sleeved blouse with embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-4-0caea852.jpg 1x, /my-command-project-test/assets/desk-collection-4@2x-70e72e14.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-4-875f1a43.jpg 1x, /my-command-project-test/assets/tab-collection-4@2x-c9c08ff1.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-4-2c98873f.jpg 1x, /my-command-project-test/assets/mob-collection-4@2x-3c9bfc34.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-4-0caea852.jpg"
+              alt="men's beige long-sleeved blouse with embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">Men's shirt Verkhovina</h3>
         <p class="colection-price">3100 UAH</p>
       </li>
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-5-aa792da9.jpg 1x, /my-command-project-test/assets/desk-collection-5@2x-1a90b93b.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-5-9054aad1.jpg 1x, /my-command-project-test/assets/tab-collection-5@2x-3632e35f.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-5-0f10d739.jpg 1x, /my-command-project-test/assets/mob-collection-5@2x-bdf49c13.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-5-aa792da9.jpg"
-            alt="men's black long-sleeved blouse with embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-5-aa792da9.jpg 1x, /my-command-project-test/assets/desk-collection-5@2x-1a90b93b.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-5-9054aad1.jpg 1x, /my-command-project-test/assets/tab-collection-5@2x-3632e35f.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-5-0f10d739.jpg 1x, /my-command-project-test/assets/mob-collection-5@2x-bdf49c13.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-5-aa792da9.jpg"
+              alt="men's black long-sleeved blouse with embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">Mountain men's shirt</h3>
         <p class="colection-price">3300 UAH</p>
       </li>
       <li class="collection-item">
-        <picture
-          ><source
-            srcset="/my-command-project-test/assets/desk-collection-6-b6645933.jpg 1x, /my-command-project-test/assets/desk-collection-6@2x-c0905083.jpg 2x"
-            media="(min-width: 1280px)" />
-          <source
-            srcset="/my-command-project-test/assets/tab-collection-6-bd390ab9.jpg 1x, /my-command-project-test/assets/tab-collection-6@2x-826a827f.jpg 2x"
-            media="(min-width: 768px)" />
-          <source
-            srcset="/my-command-project-test/assets/mob-collection-6-ed643545.jpg 1x, /my-command-project-test/assets/mob-collection-6@2x-8f02cbd8.jpg 2x"
-            media="(min-width: 375px)" />
-          <img
-            class="collection-model"
-            src="/my-command-project-test/assets/desk-collection-6-b6645933.jpg"
-            alt="men's white long-sleeved blouse with embroidery"
-        /></picture>
+        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-collection-6-b6645933.jpg 1x, /my-command-project-test/assets/desk-collection-6@2x-c0905083.jpg 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-collection-6-bd390ab9.jpg 1x, /my-command-project-test/assets/tab-collection-6@2x-826a827f.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/mob-collection-6-ed643545.jpg 1x, /my-command-project-test/assets/mob-collection-6@2x-8f02cbd8.jpg 2x"
+              media="(min-width: 375px)"
+            />
+            <img
+              class="collection-model"
+              src="/my-command-project-test/assets/desk-collection-6-b6645933.jpg"
+              alt="men's white long-sleeved blouse with embroidery"
+            />
+          </picture>
+        </div>
         <h3 class="colection-model-text">Men's shirt Yasen</h3>
         <p class="colection-price">1700 UAH</p>
       </li>
     </ul>
   </div>
 </section>
+      <section class="section">
+  <div class="order-section">
+    <div class="order-img-girl"></div>
+    <div class="container">
+      <div class="order-form-desc">
+        <div class="order-form-box"  id="customer-order">
+          <h2 class="order-subtitle">
+            <span class="order-orange-word">Your order</span> is our priority:
+            Personalized approach and quality of service
+          </h2>
 
-      <section>
-    <p>your-order</p>
+          <form class="order-forms">
+            <div class="order-form-input-box">
+              <input
+                class="order-form-input"
+                type="text"
+                name="user-name"
+                pattern="[a-zA-ZА-Яа-яїЇіІєЄ'Ґґ]+"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="order-form-input-box">
+              <input
+                class="order-form-input"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="order-form-wrapper-comment">
+              <textarea
+                class="order-form-input order-form-comment"
+                name="user-comment"
+                placeholder="Comments"
+                required
+              ></textarea>
+            </div>
+
+            <button class="order-form-button" type="submit">
+              Send<svg
+                class="order-icon"
+                width="24"
+                height="20"
+                aria-label="icon-arrow"
+              >
+                <use href="/my-command-project-test/assets/icons-73a07428.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="order-foto">
+          <picture>
+            <source
+              srcset="/my-command-project-test/assets/desk-order-f231b417.jpg 1x, /my-command-project-test/assets/desk-order@2x-843b5142.jpg 2x"
+              media="(min-width: 1128px)"
+            />
+            <source
+              srcset="/my-command-project-test/assets/tab-order-8dbdd4f9.jpg 1x, /my-command-project-test/assets/tab-order@2x-471e420a.jpg 2x"
+              media="(min-width: 768px)"
+            />
+
+            <img
+              class="orders-img"
+              src="/my-command-project-test/assets/desk-order-f231b417.jpg"
+              alt="Ukrainiane woman shirt"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
       <section class="section testimonials-section" id="testimonials">
   <div class="container">
     <h2 class="section-title testimonials-title">Testimonials</h2>
@@ -388,36 +556,34 @@
   </div>
 </footer>
 
-    <div class="backdrop-menu backdrop-is-open">
-  <div class="container mobile-menu-modal">
-    <button class="mobile-menu-btn-close">
-      <svg class="mobile-menu-icon-close">
-        <use href="../img/icons.svg"></use>
-      </svg>
-    </button>
-
-    <address>
-      <a class="mobile-menu-phone-link" href="tel:+380684439426"
-        >+380 (68) 443-94-26</a
-      >
-    </address>
-
-    <ul class="mobile-menu-list">
-      <li class="mobile-menu-item">
-        <a href="#about-us" class="mobile-menu-link">About us</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#our-collection" class="mobile-menu-link">Our collection</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#customer-order" class="mobile-menu-link">Customer-order</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#testimonials" class="mobile-menu-link">Testimonials</a>
-      </li>
-    </ul>
-  </div>
-</div>
+      <!-- <div class="backdrop-menu is-open js-menu-container" id="mobile-menu">
+    <div class="mobile-menu-modal">
+      <address>
+        <a class="mobile-menu-phone-link" href="tel:+380684439426"
+          >+380 (68) 443-94-26</a
+        >
+      </address>
+      <button class="mobile-menu-btn-close js-close-menu">
+        <svg class="mobile-menu-icon-close">
+          <use href="/img/icons.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#about-us" class="mobile-menu-link">About us</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#our-collection" class="mobile-menu-link">Our collection</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#customer-order" class="mobile-menu-link">Customer-order</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#testimonials" class="mobile-menu-link">Testimonials</a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
 
 
     
