@@ -18,13 +18,14 @@
     line-height: 1.37;
     letter-spacing: -0.03em;
     color: #fcf9f9;
-    margin-bottom: 40px;
+    
 }
 
 .about-us-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 40px;
 }
 
 .about-img {
@@ -42,6 +43,8 @@
     .about-us-title {
         font-size: 44px;
         line-height: 1.45;
+        
+
     }
 
     .about-us {
@@ -66,10 +69,13 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .about-us-container {
-        flex-direction: row;
-        gap: 50px;
-    }
+            .about-container {
+            display: flex;
+            gap: 50px;
+        }
+                .about-us-container {
+                    margin: auto 0;
+                }
 
     .about-us {
         padding-top: 75px;
