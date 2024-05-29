@@ -4,6 +4,7 @@
         background-size: 199px 177px;
             background-repeat: no-repeat;
             background-position: -127px 250px;
+            cursor: default;
     }
 
 
@@ -20,7 +21,13 @@
     color: #fcf9f9;
     text-align: center;
     margin-bottom: 40px;
+    transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.collection-title:hover,
+.collection-title:focus{
+    color: #ecd979;
+}
+
 
 .collection-menu {
     display: flex;
@@ -32,7 +39,17 @@
 .collection-model {
     margin-bottom: 18px;
 }
+.colection-price{
+    transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 
+.colection-price:hover,
+.colection-price:focus{
+color: #ecd979;
+font-size: 18px;
+
+}
 .colection-model-text {
     font-weight: 500;
     font-size: 14px;
@@ -40,6 +57,13 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fcf9f9;
+    transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.colection-model-text:hover,
+.colection-model-text:focus {
+    color: #ecd979;
+   
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {

@@ -27,6 +27,7 @@
     line-height: 1.37;
     letter-spacing: -0.03em;
     color: #fcf9f9;
+    cursor: default;
 }
 
 .about-us-list {
@@ -34,6 +35,7 @@
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
+    cursor: default;
 }
 
 .about-img {

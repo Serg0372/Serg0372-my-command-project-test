@@ -20,6 +20,7 @@
   letter-spacing: 0.03em;
   margin: 0 0 20px 0;
   max-width: 335px;
+  cursor: default;
   transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -96,6 +97,7 @@ transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    cursor: default;
   }
 
   .hero-group-icon {

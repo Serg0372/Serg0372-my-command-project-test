@@ -60,6 +60,7 @@ FOOTER STYLES
   line-height: 1.23;
   letter-spacing: -0.03em;
   color: #fcf9f9;
+  cursor: default;
   transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
