@@ -57,7 +57,7 @@
 @media screen and (min-width: 768px) {
     .our-collection {
         background-size: 328px 330px;
-        background-position: -218px 250px;
+        background-position: -218px 20px;
     }
 
     .collection-title {
@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 1280px) {
     .our-collection {
-        /*background-position: -169px 290px;*/
+        /* background-position: -218px 20px; */
     }
 
     .collection-item {

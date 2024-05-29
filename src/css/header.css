@@ -131,7 +131,7 @@
     flex-direction: row;
     gap: 60px;
     margin-right: auto;
-    min-width: 582px;
+    /* min-width: 582px; */
   }
 
   .header-address {
