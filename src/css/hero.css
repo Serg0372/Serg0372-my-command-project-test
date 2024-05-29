@@ -1,176 +1,190 @@
 /* ========================================================= Mob ========================================================= */
 .hero-group {
-    display: none;
+  display: none;
 }
 
 .hero {
-    padding-top: 84px;
-    margin-top: 72px;
-    
+  padding-top: 84px;
+  margin-top: 72px;
 }
 
 .hero-star {
-    position: relative;
+  position: relative;
 }
 
 .hero-title {
-    color: #fcf9f9;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    margin: 0 0 20px 0;
-    max-width: 335px;
+  color: #fcf9f9;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin: 0 0 20px 0;
+  max-width: 335px;
+  transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-title-span {
-    color: #ecd979;
+  color: #ecd979;
+transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-title:hover .hero-title-span,
+.hero-title:hover .hero-title-span {
+  color: #fcf9f9;
 }
 
+.hero-title:hover,
+.hero-title:focus {
+  color: #ecd979;
+}
 .hero-link {
-    display: inline-flex;
-    height: 49px;
-    padding: 14px 41px;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.1);
-    color: #fcf9f9;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-left: 90px;
-    margin-right: auto;
-    gap: 10px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  height: 49px;
+  padding: 14px 41px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  color: #fcf9f9;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-left: 90px;
+  margin-right: auto;
+  gap: 10px;
+  transition: border-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-link:hover,
 .hero-link:focus {
-    border: 1px solid #ecd979;
+  border: 1px solid #ecd979;
 }
 
 .hero-link-icon {
-    fill: #ecd979;
+  fill: #ecd979;
 }
 
 .hero-button-link {
-    display: inline-flex;
-    gap: 10px;
+  display: inline-flex;
+  gap: 10px;
 }
 
 /* ========================================================= Tab ========================================================= */
 @media screen and (min-width: 768px) {
-    .hero {
-        padding-top: 100px;
-    }
+  .hero {
+    padding-top: 100px;
+  }
 
-    .hero-title {
-        font-size: 54px;
-        font-weight: 400;
-        line-height: 1.18;
-        letter-spacing: -0.03em;
-        margin: 0 0 40px 0;
-        max-width: 549px;
-    }
+  .hero-title {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+    margin: 0 0 40px 0;
+    max-width: 549px;
+  }
 
-    .hero-group {
-        position: absolute;
-        top: 0;
-            right: 32px;
-        width: 115px;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
+  .hero-group {
+    position: absolute;
+    top: 0;
+    right: 32px;
+    width: 115px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 
-    .hero-group-icon {
-        fill: #ecd979;
-    }
+  .hero-group-icon {
+    fill: #ecd979;
+  }
 
-    .hero-group-text {
-        color: rgba(252, 249, 249, 0.4);
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.04em;
-    }
+  .hero-group-text {
+    color: rgba(252, 249, 249, 0.4);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+    transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.hero-group:hover .hero-group-text,
+.hero-group:focus .hero-group-text{
+    color: #fcf9f9;
+}
 
-    .hero-link {
-        margin-left: 173px;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-    }
 
-    .hero-button {
-        margin-left: 173px;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-    }
+  .hero-link {
+    margin-left: 173px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
+
+  .hero-button {
+    margin-left: 173px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
 }
 
 /* ========================================================= Deks ======================================================= */
 @media screen and (min-width: 1280px) {
-    .hero-block {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        gap: 40px;
-    }
+  .hero-block {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+  }
 
-    .hero-title {
-        font-size: 54px;
-        font-weight: 400;
-        line-height: 1.18;
-        letter-spacing: -0.03em;
-        margin: 0 0 40px 0;
-        max-width: 518px;
-        margin-top: 95px;
-    }
+  .hero-title {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
+    margin: 0 0 40px 0;
+    max-width: 518px;
+    margin-top: 95px;
+  }
 
-    .hero-link {
-        margin-left: 173px;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-    }
+  .hero-link {
+    margin-left: 173px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+  }
 
-    .hero-button {
-        margin-left: 141px;
-    }
+  .hero-button {
+    margin-left: 141px;
+  }
 
-    .hero-button-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .hero-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .hero-star {
-        position: relative;
-    }
+  .hero-star {
+    position: relative;
+  }
 
-    .hero-group {
-      
-        top: 14px;
-        right:50px;
-    }
+  .hero-group {
+    top: 14px;
+    right: 50px;
+  }
 
-    .hero-group-text {
-        color: rgba(252, 249, 249, 0.4);
-        text-align: center;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.04em;
-    }
+  .hero-group-text {
+    color: rgba(252, 249, 249, 0.4);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
 }

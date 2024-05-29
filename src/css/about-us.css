@@ -5,6 +5,15 @@
     background-size: 459px;
     background-position: -108% 104%;
 }
+.about-section-text{
+    transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.about-section-text:hover,
+.about-section-text:focus {
+    color: #fcf9f9;
+}
 
 .about-us-container {
     display: flex;

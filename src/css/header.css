@@ -1,3 +1,4 @@
+
 .header {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -74,6 +75,7 @@
 .header-social-link:focus {
   border: 1px solid #ecd979;
   background-color: transparent;
+  
 }
 
 .header-social-icon {
