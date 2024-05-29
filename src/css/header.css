@@ -1,5 +1,6 @@
 .header {
   padding-top: 20px;
+  padding-bottom: 10px;
   /* зафиксована секція */
   position: fixed;
   /* зафіксований край зверху */
@@ -15,9 +16,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 87px;
+ 
   margin: 0 auto;
   height: 52px;
 }
@@ -90,13 +91,13 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    gap: 440px;
+    
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header-container {
-    gap: 229px;
+   
   }
 
   .header-list {

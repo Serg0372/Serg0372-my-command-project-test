@@ -1,9 +1,16 @@
-.our-collection {
-    background-image: url(/img/ornaments/yellow-ornament.png);
-    background-size: 199px 177px;
-    background-repeat: no-repeat;
+
+    .our-collection {
+        background-image: url(/img/ornaments/yellow-ornament.png);
+        background-size: 199px 177px;
+            background-repeat: no-repeat;
+            background-position: -127px 250px;
+    }
+
+
+@media screen and (min-width: 375px) {
+    .our-collection {
     background-position: -127px 330px;
-}
+}}
 
 .collection-title {
     font-weight: 500;
