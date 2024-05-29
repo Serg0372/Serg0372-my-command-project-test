@@ -186,7 +186,7 @@ color: #fcf9f9;
 
     @media screen and (min-resolution: 192dpi) and (min-width: 1280px) {
         .order-img-girl {
-            background-image: url(/img/order/desc-order-bg@2x.jpg);
+            background-image: url(/img/order/desk-order-bg@2x.jpg);
         }
     }
 .order-form-box{
