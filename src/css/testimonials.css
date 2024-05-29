@@ -11,9 +11,14 @@
   transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.testimonials-title:hover,
-.testimonials-title:focus {
-  color: #ecd979;}
+
+
+        .section:hover .testimonials-title,
+        .section:focus .testimonials-title {
+          color: #ecd979;
+        }
+
+
 
 .testimonials-subtitle {
   font-weight: 600;
@@ -25,8 +30,9 @@
   cursor: default;
   transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.testimonials-subtitle:hover,
-.testimonials-subtitle:focus {
+
+.testimonials-list-box:hover .testimonials-subtitle,
+.testimonials-list-box:focus .testimonials-subtitle{
   color: #ecd979;
 }
 
@@ -41,10 +47,11 @@
   transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.testimonials-text:hover,
-.testimonials-text:focus {
+.testimonials-list-box:hover .testimonials-text,
+.testimonials-list-box:focus .testimonials-text {
   color: #fcf9f9;
 }
+
 
 .testimonials-list-box {
   box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
