@@ -106,12 +106,20 @@ color: #fcf9f9;
 
 .order-icon {
   fill: #ecd979;
+  transition: transform 0.3s ease;
 }
 
 .order-form-button:hover,
 .order-form-button:focus {
   border-color: #ecd979;
+  color: #ecd979;
 }
+
+.order-form-button:hover .order-icon,
+.order-form-button:focus .order-icon{
+  transform: rotate(30deg);
+}
+
 .order-foto{
     display: none;
 }
