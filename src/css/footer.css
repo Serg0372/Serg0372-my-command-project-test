@@ -1,18 +1,18 @@
-/* ========================================================================================================================================================
-FOOTER STYLES
-======================================================================================================================================================== */
-.footer {
-  padding-top: 40px;
-  transition: color 2550ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/* ========== FOOTER STYLES ========= */
+/*.footer {
+   padding-top: 40px; 
+  
+}*/
+
 
 .footer-container {
   border-top: 1px solid rgba(252, 249, 249, 0.1);
   background-image: url(/img/ornaments/yellow-ornament.png);
   background-repeat: no-repeat;
-  background-position: 50% 185%;
+  background-position: 50% 285%;
   background-size: 452px 401px;
   padding: 40px 0 280px;
+  transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
@@ -22,37 +22,63 @@ FOOTER STYLES
   }
 }
 
+.footer-container:hover,
+.footer-container:focus {
+  background-position: 50% 185%;
+}
+
 .footer-nav-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   max-width: 280px;
-  height: 70px;
-  column-gap: 40px;
-  gap: 25px;
+  column-gap: 25px;
+  gap: 40px;
   margin-bottom: 40px;
+  line-height: 0;
+}
+
+.footer-nav-list-link{
+  text-transform: uppercase;
+    color: #fcf9f9;
+    position: relative;
+       scale: 1;
+       padding-bottom: 10px; 
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-nav-list-link:hover,
+.footer-nav-list-link:focus {
+  color: #ecd979; 
+}
+
+.footer-nav-list-link::after {
+  content: '';
+  position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+  background-color: #fcf9f9;
+  transition: width 450ms ease-out, left 450ms ease-out;
+}
+
+.footer-nav-list-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .footer-nav-list-item {
   width: calc((100% - 40px) / 2);
   line-height: 0;
- 
+  scale: 1;
+  transition: all 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.footer-nav-list-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  text-transform: uppercase;
-  color: #fcf9f9;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-nav-list-item:hover,
+.footer-nav-list-item:focus {
+scale: 1.1;
 }
 
-.footer-nav-list-link:hover,
-.footer-nav-list-link:focus {
-  color: #ecd979;
-}
 
 .footer-company-slogan {
   font-weight: 400;
@@ -61,30 +87,29 @@ FOOTER STYLES
   letter-spacing: -0.03em;
   color: #fcf9f9;
   cursor: default;
-  transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-slogan-span {
   color: #ecd979;
-  transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color  450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer:hover .footer-company-slogan,
-.footer:hover .footer-company-slogan{
-  color:#ecd979;
+ .footer-company-slogan:hover,
+ .footer-company-slogan:hover {
+  color: #ecd979;
 }
 
-.footer:hover .footer-company-slogan .footer-slogan-span,
-.footer:focus .footer-company-slogan .footer-slogan-span {
-color: #fcf9f9;
+.footer-company-slogan:hover .footer-slogan-span,
+.footer-company-slogan:focus .footer-slogan-span {
+  color: #fcf9f9;
 }
 
 @media screen and (min-width: 768px) {
   .footer-container {
     background-position: right -404px bottom -17px;
-
     padding: 40px 0;
-    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .footer-container:hover,
@@ -104,16 +129,16 @@ color: #fcf9f9;
 
   .footer-nav-list-item {
     width: auto;
-    line-height: 0;
+    /* transition: 450ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
 
   .footer-nav-list-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
-    width: calc((100% - 75px) / 4);
-  }
-
+    scale: 1;
+    width: calc((100% - 75px) / 4);}
+    
   .footer-company-slogan {
     max-width: 521px;
     font-weight: 400;
@@ -126,7 +151,6 @@ color: #fcf9f9;
   .footer-container {
     background-size: 595px 528px;
     background-position: right -259px bottom -104px;
-
     padding: 40px 0;
     transition: background-position 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   }

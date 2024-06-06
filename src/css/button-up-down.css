@@ -1,39 +1,34 @@
- /* ========= Button UP - DOWN ========= */
- html {
-     scroll-behavior: smooth;
-    /* overflow: scroll; */
- }
+/* ========= Button UP - DOWN ========= */
 
- .arrow-up {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border: 2px solid #ecd979;
-     border-radius: 50%;
-     stroke: #ecd979;
-     fill:#ecd979;
-     cursor: pointer;
-     background-color:transparent;
-     position: fixed;
-     bottom: 85px;
-     right: 25px;
-     z-index: 999;
-     width: 
-     40px;
-     height: 40px;
-     transition: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+.arrow-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fcf9f9;
+    stroke: #fcf9f9;
+    fill: #fcf9f9;
+    opacity: 0.2;
+    cursor: pointer;
+    background-color: transparent;
+    position: fixed;
+    bottom: 85px;
+    right: 25px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    transition: 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- }
+.arrow-up-two {
+    bottom: 25px;
+    right: 25px;
+    transform-box: fill-box;
+    transform-origin: center center;
+    transform: scale(1);
+}
 
- .arrow-up-two {
-     bottom: 25px;
-     right: 25px;
-     transform-box: fill-box;
-     transform-origin: center center;
-     transform: scale(1);
- }
-
- /* .arrow-up,
+/* .arrow-up,
   .arrow-up-two{
     transform: translate(0px 100%);
     opacity: 0;
@@ -44,15 +39,16 @@
 .arrow-up-two.active {transform: translate(0px 0px);
     opacity: 1;} */
 
+.arrow-up:hover
+/* .arrow-up:focus  */
+{
+    background-color: transparent;
+    border: 2px solid #ecd979;
+    stroke: #ecd979;
+    fill: #ecd979;
+    opacity: 1;
+}
 
- .arrow-up:hover,
- .arrow-up:focus {
-     background-color:transparent;
-     border: 2px solid #fcf9f9;
-     stroke: #fcf9f9;
-     fill: #fcf9f9;
- }
-
- .arrow-up:hover {
-     transform: scale(1.2);
- }
+.arrow-up:hover {
+    transform: scale(1.2);
+}

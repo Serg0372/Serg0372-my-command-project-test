@@ -3,38 +3,89 @@
     <h2 class="collection-title">Our collection</h2>
     <ul class="collection-menu">
       <li class="collection-item">
-        <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
-          <picture>
-            <source
-              srcset="
-                /img/collection/desk-collection-1.jpg    1x,
-                /img/collection/desk-collection-1@2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                /img/collection/tab-collection-1.jpg    1x,
-                /img/collection/tab-collection-1@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                /img/collection/mob-collection-1.jpg    1x,
-                /img/collection/mob-collection-1@2x.jpg 2x
-              "
-              media="(min-width: 375px)"
-            />
-            <img
-              class="collection-model"
-              src="/img/collection/desk-collection-1.jpg"
-              alt="women's black long-sleeved blouse with colored embroidery"
-            />
-          </picture>
+        <div class="card-box">
+          <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
+            <picture class="collection-product">
+              <source
+                srcset="
+                  /img/collection/desk-collection-1.jpg    1x,
+                  /img/collection/desk-collection-1@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  /img/collection/tab-collection-1.jpg    1x,
+                  /img/collection/tab-collection-1@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  /img/collection/mob-collection-1.jpg    1x,
+                  /img/collection/mob-collection-1@2x.jpg 2x
+                "
+                media="(min-width: 375px)"
+              />
+              <img
+                class="collection-model"
+                src="/img/collection/desk-collection-1.jpg"
+                alt="women's black long-sleeved blouse with colored embroidery"
+              />
+            </picture>
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+              <svg height="24" width="24">
+                <use href="./img/icons.svg#inr-heart"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div  data-aos="zoom-in" data-aos-duration="2000"  class="card-back">
+            <p>
+              Discover the AUGUST POLTAVA WOMEN'S BLOUSE, crafted from premium
+              natural cotton with intricate hand-embroidered designs inspired by
+              Poltava's rich heritage. This blouse offers timeless elegance and
+              comfort, making it a perfect addition to any wardrobe. Available
+              in various sizes.
+            </p>
+
+            <form class="collection-order-form-box">
+              <div class="collection-order-form">
+                <div class="collection-order-item">
+                  <label for="size">Size:</label>
+                  <select id="size">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                  </select>
+                </div>
+                <div class="collection-order-item">
+                  <label for="quantity">Quantity:</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                    value="1"
+                    required
+                  />
+                </div>
+              </div>
+              <p class="total-price">
+                Total: UAH <span id="total-price">3300</span>
+              </p>
+
+              <div class="collection-order-form-button">
+                <button type="button">Continue Shopping</button>
+                <button type="submit">Buy Now</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <h3 class="colection-model-text">august poltava women's blouse</h3>
-        <p class="colection-price">3300 UAH</p>
+           <h3 class="collection-model-text">august poltava women's blouse</h3>
+        <p class="collection-price">UAH <span id="unit-price">3300</span></p>
+        
       </li>
       <li class="collection-item">
         <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
@@ -66,9 +117,14 @@
               alt="Women's beige long-sleeved blouse with embroidery"
             />
           </picture>
+          <div class="favorite-icon" onclick="toggleFavorite(this)">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#inr-heart"></use>
+            </svg>
+          </div>
         </div>
-        <h3 class="colection-model-text">Women's blouse Gorgany</h3>
-        <p class="colection-price">3350 UAH</p>
+        <h3 class="collection-model-text">Women's blouse Gorgany</h3>
+        <p class="collection-price">3350 UAH</p>
       </li>
       <li class="collection-item">
         <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
@@ -100,9 +156,14 @@
               alt="Women's white long-sleeved blouse with embroidery"
             />
           </picture>
+          <div class="favorite-icon" onclick="toggleFavorite(this)">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#inr-heart"></use>
+            </svg>
+          </div>
         </div>
-        <h3 class="colection-model-text">Women's blouse Crimea</h3>
-        <p class="colection-price">4000 UAH</p>
+        <h3 class="collection-model-text">Women's blouse Crimea</h3>
+        <p class="collection-price">4000 UAH</p>
       </li>
       <li class="collection-item">
         <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
@@ -134,9 +195,14 @@
               alt="men's beige long-sleeved blouse with embroidery"
             />
           </picture>
+          <div class="favorite-icon" onclick="toggleFavorite(this)">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#inr-heart"></use>
+            </svg>
+          </div>
         </div>
-        <h3 class="colection-model-text">Men's shirt Verkhovina</h3>
-        <p class="colection-price">3100 UAH</p>
+        <h3 class="collection-model-text">Men's shirt Verkhovina</h3>
+        <p class="collection-price">3100 UAH</p>
       </li>
       <li class="collection-item">
         <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
@@ -168,9 +234,14 @@
               alt="men's black long-sleeved blouse with embroidery"
             />
           </picture>
+          <div class="favorite-icon" onclick="toggleFavorite(this)">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#inr-heart"></use>
+            </svg>
+          </div>
         </div>
-        <h3 class="colection-model-text">Mountain men's shirt</h3>
-        <p class="colection-price">3300 UAH</p>
+        <h3 class="collection-model-text">Mountain men's shirt</h3>
+        <p class="collection-price">3300 UAH</p>
       </li>
       <li class="collection-item">
         <div class="card-front" data-aos="zoom-in" data-aos-duration="2000">
@@ -202,9 +273,14 @@
               alt="men's white long-sleeved blouse with embroidery"
             />
           </picture>
+          <div class="favorite-icon" onclick="toggleFavorite(this)">
+            <svg height="24" width="24">
+              <use href="./img/icons.svg#inr-heart"></use>
+            </svg>
+          </div>
         </div>
-        <h3 class="colection-model-text">Men's shirt Yasen</h3>
-        <p class="colection-price">1700 UAH</p>
+        <h3 class="collection-model-text">Men's shirt Yasen</h3>
+        <p class="collection-price">1700 UAH</p>
       </li>
     </ul>
   </div>

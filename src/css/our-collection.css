@@ -1,122 +1,209 @@
-
-    .our-collection {
-        background-image: url(/img/ornaments/yellow-ornament.png);
-        background-size: 199px 177px;
-            background-repeat: no-repeat;
-            background-position: -127px 250px;
-            cursor: default;
-    }
-
+.our-collection {
+  background-image: url(/img/ornaments/yellow-ornament.png);
+  background-size: 199px 177px;
+  background-repeat: no-repeat;
+  background-position: -127px 250px;
+  cursor: default;
+}
 
 @media screen and (min-width: 375px) {
-    .our-collection {
+  .our-collection {
     background-position: -127px 330px;
-}}
-
-
+  }
+}
 
 .collection-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.37;
-    letter-spacing: -0.03em;
-    color: #fcf9f9;
-    text-align: center;
-    margin-bottom: 40px;
-    transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section:hover .collection-title,
+.section:focus .collection-title {
+  color: #ecd979;
+}
+
+.collection-item {
+  transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.collection-item:hover .collection-price,
+.collection-item:focus .collection-price {
+  color: #ecd979;
+  font-size: 18px;
+}
+
+.collection-item:hover .collection-model-text,
+.collection-item:focus .collection-model-text {
+  color: #ecd979;
+}
+
+.card-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 18px;
 }
 
 
-          .section:hover .collection-title,
-          .section:focus .collection-title {
-              color: #ecd979;
-          }
+.card-back {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-color: #FCF9F9;
+  color: #1C2225;
+  overflow: auto;
+  opacity: 0.85;
+  padding: 15px;
+  font-weight: 400;
+    font-size: 16px;
+}
+
+.card-back p{
+  margin-bottom: 10px;
+}
+
+.collection-order-form{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.collection-order-item{
+  display: flex;
+  flex-direction: column;
+  column-gap: 8px;
+  width: 65px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.collection-order-item label{
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.collection-order-form-box p{
+  font-size: 18px;
+  text-align: center;
+}
+
+.collection-order-form-button {
+  display: flex;
+  gap: 20px;
+ justify-content: center;
+}
+
+.collection-order-form-button button{
+  border: 1px solid #1C2225;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 4px 6px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #1C2225;
+   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.collection-order-form-button button:hover,
+.collection-order-form-button button:focus{
+  border-color: #ecd979;
+  color: #ecd979;
+}
+
+.collection-item:hover .card-back,
+ .collection-item:focus .card-back{
+  top: 30%;
+  transition: 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .collection-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.collection-model {
-    margin-bottom: 18px;
+.collection-model-text,
+.collection-price {
+  transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.collection-item{transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);}
-
-.collection-item:hover .colection-price,
-.collection-item:focus .colection-price {
-    color: #ecd979;
-    font-size: 18px;
+.collection-model-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.collection-item:hover .colection-model-text,
-.collection-item:focus .colection-model-text {
-    color: #ecd979;
-}
-.colection-model-text,
-.colection-price{transition: all 550ms cubic-bezier(0.4, 0, 0.2, 1);
+.collection-product {
+  position: relative;
 }
 
-.colection-model-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #fcf9f9;
-    transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
+.favorite-icon svg {
+  fill: #000000;
+  transition: fill 0.3s ease;
+}
+
+.favorite-icon:hover svg,
+.favorite-icon:focus svg {
+  fill: #ff0202;
+}
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px) {
-    .footer-container {
-        background-image: url(/img/ornaments/yellow-ornament@2x.png);
-    }
+  .footer-container {
+    background-image: url(/img/ornaments/yellow-ornament@2x.png);
+  }
 }
 
-/* @media screen and (min-width: 375px) and (max-width: 767px) {
-    .our-collection {
-        background-position: -150px 190px;
-    }
-} */
-
 @media screen and (min-width: 768px) {
-    .our-collection {
-        background-size: 328px 330px;
-        background-position: -218px 20px;
-    }
+  .our-collection {
+    background-size: 328px 330px;
+    background-position: -218px 20px;
+  }
 
-    .collection-title {
-        font-size: 44px;
-        line-height: 1.45;
-    }
+  .collection-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
 
-    .colection-model-text {
-        font-size: 18px;
-    }
+  .collection-model-text {
+    font-size: 18px;
+  }
 
-    .collection-menu {
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+  .collection-menu {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-    .collection-item {
-        flex-basis: calc((100% - 20px) / 2);
-    }
+  .collection-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .our-collection {
-        /* background-position: -218px 20px; */
-    }
-
-    .collection-item {
-        flex-basis: calc((100% - 40px) / 3);
-        row-gap: 40px;
-    }
+  .collection-item {
+    flex-basis: calc((100% - 40px) / 3);
+    row-gap: 40px;
+  }
 }

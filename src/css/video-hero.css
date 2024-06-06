@@ -1,0 +1,11 @@
+.hero-video-section{
+    margin-top: 60px;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
