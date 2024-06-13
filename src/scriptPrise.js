@@ -7,7 +7,7 @@
                 const quantity = parseInt(quantityInput.value);
                 const unitPrice = parseFloat(unitPriceElement.textContent);
                 const totalPrice = unitPrice * quantity;
-                totalPriceElement.textContent = totalPrice.toFixed(2);
+                totalPriceElement.textContent = totalPrice.toFixed(0);
             }
 
             quantityInput.addEventListener('input', updateTotalPrice);
