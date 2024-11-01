@@ -122,7 +122,7 @@
 
 .collection-item:hover .card-back,
 .collection-item:focus .card-back {
-  top: 30%;
+  top: 60%;
   transition: 950ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
